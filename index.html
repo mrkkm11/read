@@ -44,21 +44,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Let's Practice Speech!</h1>
+        <h1>magbasa ka bobo!</h1>
 
         <div class="box">
             <p>Try to say the sentence:</p>
-            <p id="originalSentence" style="font-size: 24px; color: #333;">Hello, how are you?</p>
+            <p id="originalSentence" style="font-size: 24px; color: #333;">Hello,mga demonyo?</p>
         </div>
 
         <div class="input-box">
-            <button id="startRecording" class="button">Start Recording</button>
-            <button id="stopRecording" class="button" disabled>Stop Recording</button>
+            <button id="startRecording" class="button">pindot muna to bago magsalita!</button>
+            <button id="stopRecording" class="button" disabled>Stop na tangina</button>
         </div>
 
         <div class="box">
             <p>Your Speech:</p>
-            <div id="result" style="font-size: 20px; color: #333;">Waiting for you to speak...</div>
+            <div id="result" style="font-size: 20px; color: #333;">bilis puta...</div>
         </div>
 
         <div class="box">
@@ -84,7 +84,7 @@
         }
 
         recognition.onstart = () => {
-            resultDiv.innerHTML = 'Go ahead, say the sentence!';
+            resultDiv.innerHTML = 'magsasalita o sasapukin kita!';
         };
 
         recognition.onresult = (event) => {
